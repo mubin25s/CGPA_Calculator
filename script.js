@@ -115,7 +115,7 @@ let appConfig = null;
 // Function to fetch configuration
 async function loadConfig() {
     try {
-        const response = await fetch('config.json');
+        const response = await fetch('wrangler.json');
         appConfig = await response.json();
         calculateTotal(); // Run initial calculation once config is loaded
     } catch (error) {
